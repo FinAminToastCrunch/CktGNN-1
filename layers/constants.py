@@ -1,13 +1,12 @@
 import os
 
-path = os.path.abspath(__file__)
-path = path[:path.rindex("/")] + "/../"
-PATH = os.path.abspath(path)
+PATH = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..")
+)
 
-# the latter are only default values used in config
-DIR_DATA = os.path.join(PATH, 'data')
-DIR_RESULTS = os.path.join(PATH, 'results')
-DIR_SAVED_MODELS = os.path.join(PATH, 'saved_models')
+DIR_DATA = os.path.join(PATH, "data")
+DIR_RESULTS = os.path.join(PATH, "results")
+DIR_SAVED_MODELS = os.path.join(PATH, "saved_models")
 
 
 NA_SUM = "add"
