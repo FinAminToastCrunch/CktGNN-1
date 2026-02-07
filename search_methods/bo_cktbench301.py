@@ -10,6 +10,7 @@ import numpy as np
 from collections import defaultdict
 import matplotlib.pyplot as plt
 from search_methods.utils_search import *
+import pickle
 
 def bo_expected_improvement_search(embedding_path, total_rounds, save_path, init_size, k, seed):
     """ implementation of CATE-DNGO-LS on the NAS-Bench-101 search space """
